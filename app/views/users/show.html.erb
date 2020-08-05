@@ -1,3 +1,7 @@
+<!-- Let's say that on our User#show page we want our users to see a list of all of the posts that they've commented on. What would that look like?
+
+Because we've set up a join model, the interface will look almost identical. We can simply call the posts method on our user and iterate through. -->
+
 <h2><%= @user.username %> </h2> has commented on the following posts:
 
 <% @user.posts.each do |post| %>
